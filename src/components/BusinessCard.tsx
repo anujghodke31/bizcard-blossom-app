@@ -14,13 +14,13 @@ interface BusinessCardProps {
 }
 
 const BusinessCard = ({
-  name = "John Doe",
-  title = "Software Engineer",
-  company = "Tech Corp",
-  phone = "+1 234 567 890",
-  email = "john@example.com",
-  website = "www.example.com",
-  address = "123 Business Street"
+  name = "Anuj Ghodke",
+  title = "Web Developer",
+  company = "Infosys",
+  phone = "+91 1234567890",
+  email = "anujghodke@gmail.com",
+  website = "www.anuj.com",
+  address = "Amrutdham, Nashik-422003"
 }: Partial<BusinessCardProps>) => {
   return (
     <div className="perspective-1000">
