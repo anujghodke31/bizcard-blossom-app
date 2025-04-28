@@ -1,8 +1,13 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import CardEditor from '@/components/CardEditor';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
 
-const Index = () => {
+const Details = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto py-8 px-4">
@@ -15,10 +20,19 @@ const Index = () => {
         
         <main>
           <CardEditor />
+          <div className="flex justify-center mt-8">
+            <Button 
+              onClick={() => navigate('/design')}
+              className="bg-purple-600 hover:bg-purple-700"
+            >
+              Proceed to Design
+              <ArrowRight className="ml-2" />
+            </Button>
+          </div>
         </main>
       </div>
     </div>
   );
 };
 
-export default Index;
+export default Details;
